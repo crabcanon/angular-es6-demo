@@ -1,0 +1,33 @@
+{
+  "name": "kiosked-assignment",
+  "version": "1.0.0",
+  "description": "An experimental project in using ES6 via SystemJS, JSPM, Gulp, Babel and AngularJS",
+  "main": "system.config.js",
+  "scripts": {
+    "postinstall": "jspm install",
+    "prestart": "npm install",
+    "start": "gulp watch serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/crabcanon/kiosked-assignment.git"
+  },
+  "keywords": [
+    "es6",
+    "systemjs",
+    "jspm",
+    "gulp",
+    "babel",
+    "angularjs"
+  ],
+  "author": {
+    "name": "Ye Huang",
+    "email": "sysuhuangye@gmail.com",
+    "url": "https://yehuang.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crabcanon/kiosked-assignment/issues"
+  },
+  "homepage": "https://github.com/crabcanon/kiosked-assignment#readme"
+}
