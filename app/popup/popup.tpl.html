@@ -1,0 +1,11 @@
+<div class="popup">
+	<div id="popup-modal" ng-show="vm.show" style="width: 400px; height: 400px; background: cyan;">
+		<div class="modal-overlay" ng-click="vm.hideModal()"></div>
+		<div class="modal-dialog" ng-style="vm.dialogStyle">
+			<button class="modal-header" ng-click="vm.hideModal()">Close modal</button>
+			<div class="modal-content" style="width: 400px; height: 200px; background: black;">
+				<div style="color: white;">Counter: {{}}</div>
+			</div>
+		</div>
+	</div>
+</div>
