@@ -20,7 +20,15 @@
 </head>
 <body>
 	<header></header>
-    <ui-view class=""></ui-view>
+	<div class="container">
+		<section id="time-section">
+			<build-time></build-time>
+		</section>
+		<section id="popup-section" ng-controller="PopupCtrl as vm">
+			<button id="popup-button" ng-click="vm.toggleModal()">Click me!</button>
+		    <popup-window show="vm.modalShown"></popup-window>
+		</section>
+	</div>
     <footer></footer>
 </body>
 </html>
