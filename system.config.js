@@ -14,9 +14,11 @@ System.config({
   },
 
   map: {
+    "angular": "github:angular/bower-angular@1.3.14",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.6",
+    "jquery": "npm:jquery@2.2.2",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
