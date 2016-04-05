@@ -21,31 +21,35 @@
 * Watch and reload webpage in real-time via `gulp` and `websocket`
 * Bootstrap the webpage via `systemjs`
 
+## Get started
+
+* Clone the project
+* `npm start`
+
 ## Motivation
 
 #### 1. Why to use ES6?
 
 * AngularJS 2 fully supports TypeScript and works equally well with ES6.
 * React fully supports ES6.
-* The sugar syntax and new features make things easier and more clear. 
-* Seems like the whole bloody world belongs to ES6. It's time to embrace!
+* The sugar syntax and new features make things easier and more clear. It's time to embrace!
 
 #### 2. Why not to use bower?
 
 * Some amazing libs don't support bower anymore, for example Mapbox.
 * https://github.com/mapbox/mapbox-gl-js/issues/1342
-* What bower could do, npm can do as well. Why add one more layer?
-* More tasks in the gulpfile.
+* It's a good practice to let npm handle everything somehow. No need to add one more layer.
+* It requires more complicated tasks in Gulpfile in order to run.
 
 #### 3. Why to use jspm?
 
-* Based on the standard ES2015 modules and System loader API. Currently, Loader API is just the API of browsers and hasn't been able to be parts of ES2015(we only have a proposal from WHATWG for now). But once it becomes a standard specification, integrated with HTTP/2, we can write ES2015 modules without building them. 
+* JSPM is based on the standard of ES2015 modules and System loader API. Currently, Loader API is just the API of browsers and hasn't been able to be parts of ES2015(we only have a proposal from WHATWG for now). But once it becomes a standard specification, integrated with HTTP/2, we can write ES2015 modules without building. 
 * But of course, it seems like jspm is heavier(45k after compile) and also not powerful enough compared to Webpack in current phase.  
 
 #### 4. I choose to be a web developer.
 
-* If you try to embrace web technologies, you actually choose a way to embrace changes, or "evolution" is even better.
-* (A good article to know.)[https://jjperezaguinaga.com/2014/03/19/why-cant-we-find-front-end-developers/]
+* If you try to embrace web technologies, you actually choose a way to embrace changes.
+* [A good article to know.](https://jjperezaguinaga.com/2014/03/19/why-cant-we-find-front-end-developers/)
 
 ## TODO List(solid requirements)
 
@@ -74,11 +78,6 @@
 - [ ] Integrate with systemjs-builder
 - [ ] Automatically test, build and deploy(npm/travis-ci/Heroku)
 - [ ] Create a yeoman generator for this project
-
-## Get started
-
-* Clone the project
-* `npm start`
 
 ## License
 
