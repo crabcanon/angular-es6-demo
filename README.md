@@ -13,13 +13,13 @@
   
 ## Features(V1.0.0)
 
-* No more `bower`.
-* No more `RequireJS`(replaced by `ES6 modules`).
+* No more `bower`
+* No more `RequireJS`(replaced by `ES6 modules`)
 * AngularJS 1.x embraces `ES6`.
-* Easy to install & run(`npm start`).
-* Maintain dependencies by `jspm`.
-* Watch and reload the webpage in real-time via `gulp` and `websocket`.
-* Bootstrap the webpage via `systemjs`.
+* Easy to install & run(`npm start`)
+* Maintain dependencies by `jspm`
+* Watch and reload the webpage in real-time via `gulp` and `websocket`
+* Bootstrap the webpage via `systemjs`
 
 ## Get started
 
