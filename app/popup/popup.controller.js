@@ -1,15 +1,14 @@
 class PopupCtrl {
   constructor() {
-  	this.modalShown = true;
+  	this.modalShown = false;
   }
 
-  toggleModal() {
+  openModal() {
   	this.modalShown = !this.modalShown;
-  	console.log(this.modalShown);
   }
 
   hideModal() {
-  	this.modalShown = !this.modalShown;
+  	this.modalShown = false;
   }
 }
 

@@ -4,7 +4,7 @@
 		<div class="modal-dialog" ng-style="vm.dialogStyle">
 			<button class="modal-header" ng-click="vm.hideModal()">Close modal</button>
 			<div class="modal-content" style="width: 400px; height: 200px; background: black;">
-				<div style="color: white;">Counter: {{}}</div>
+				<div id="timer" style="color: white;" timer ng-if="vm.show"></div>
 			</div>
 		</div>
 	</div>

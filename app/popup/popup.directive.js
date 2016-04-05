@@ -13,9 +13,10 @@ function popupWindow() {
   	bindToController: true,
     controllerAs: 'vm',
     controller: PopupCtrl,
-  	link: function(scope, element, attrs) {
+  	link: function(scope, element) {
       let ctrl = scope.vm;
-      ctrl.hideModal = () => { ctrl.show = !ctrl.show; }
+      ctrl.hideModal = () => { ctrl.show = false; }
+      ctrl.openModal = () => { ctrl.show = true; }
   	}
   };
 }
