@@ -1,12 +1,12 @@
 # kiosked-assignment
- An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) via [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/) and [AngularJS 1.x](https://angularjs.org/).
+An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) via [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/) and [AngularJS 1.x](https://angularjs.org/).
  
 ![Screenshot One](/screenshots/one.png) 
 ![Screenshot Two](/screenshots/two.png) 
  
 ## About
 
-* A npm package originally designed for testing how to craft a complete webapp project from scratch(npm init & jspm init & gulp init).
+* This is a npm package originally designed for testing how to craft a complete webapp project from scratch(npm init & jspm init & gulp init) by employing modern practices and technologies.
 * This package could be used to explore:
   * new features of ECMAScript 6.
   * how to use JSPM/SystemJS to maintain your project. 
@@ -23,6 +23,7 @@
 * Maintain dependencies by `jspm`
 * Watch and reload the webpage in real-time via `gulp` and `websocket`
 * Bootstrap the webpage via `systemjs`
+* Compile Sass via `gulp-sass`
 * CSS3 Flexbox layout
 
 ## Get started
