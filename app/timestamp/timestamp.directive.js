@@ -4,6 +4,7 @@ import TimestampCtrl from './timestamp.controller';
 function buildTime() {
   return {
   	restrict: "E",
+    replace: true,
   	template: template,
   	bindToController: true,
   	controllerAs: 'vm',

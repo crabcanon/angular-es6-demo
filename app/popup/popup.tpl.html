@@ -1,11 +1,6 @@
-<div class="popup">
-	<div id="popup-modal" ng-show="vm.show" style="width: 400px; height: 400px; background: cyan;">
-		<div class="modal-overlay" ng-click="vm.hideModal()"></div>
-		<div class="modal-dialog" ng-style="vm.dialogStyle">
-			<button class="modal-header" ng-click="vm.hideModal()">Close modal</button>
-			<div class="modal-content" style="width: 400px; height: 200px; background: black;">
-				<div id="timer" style="color: white;" timer ng-if="vm.show"></div>
-			</div>
-		</div>
-	</div>
+<div id="popup-modal" ng-show="vm.show">
+    <button class="modal-header btn btn-yellow" ng-click="vm.hideModal()">Close modal</button>
+	<div class="modal-content">
+        <div id="timer" timer ng-if="vm.show"></div>
+    </div>
 </div>
