@@ -31,6 +31,12 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * Clone the project
 * `npm start`
 
+If there are some problems, try to run following commands(same as `npm start`):
+
+* `npm install`
+* `jspm install`
+* `gulp watch serve`
+
 ## Motivation
 
 #### 1. Why to use ES6?
