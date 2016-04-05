@@ -3,13 +3,13 @@
  
 ## About
 
-* A npm package originally designed for learning how to craft a complete webapp project from scratch(npm init & jspm init & gulp init).
+* A npm package originally designed for testing how to craft a complete webapp project from scratch(npm init & jspm init & gulp init).
 * This package could be used to explore:
   * new features of ECMAScript 6.
   * how to use JSPM/SystemJS to maintain your project. 
-  * how to construct and combine Gulp tasks.
+  * how to construct Gulp tasks with ES6.
   * how to code with AngularJS 1.x in using ES6.
-  * how to provide a good structure of SASS.  
+  * a good practice of SASS.  
   
 ## Features(V1.0.0)
 
