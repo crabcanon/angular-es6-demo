@@ -9,6 +9,6 @@ let appModule = angular.module('kiosked', [timestampModule.name, popupModule.nam
 
 angular.element(document).ready(function() {
   angular.bootstrap(document, [appModule.name], {
-  	strictDi: true
+    strictDi: true
   });
 });

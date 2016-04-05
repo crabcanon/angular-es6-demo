@@ -3,21 +3,21 @@ import PopupCtrl from './popup.controller';
 
 function popupWindow() {
   return {
-  	restrict: "E",
-  	scope: {
+    restrict: "E",
+    scope: {
       show: '='
-  	},
+    },
     replace: true,
     transclude: true,
-  	template: template,
-  	bindToController: true,
+    template: template,
+    bindToController: true,
     controllerAs: 'vm',
     controller: PopupCtrl,
-  	link: function(scope, element) {
+    link: function(scope, element) {
       let ctrl = scope.vm;
       ctrl.hideModal = () => { ctrl.show = false; }
       ctrl.openModal = () => { ctrl.show = true; }
-  	}
+    }
   };
 }
 

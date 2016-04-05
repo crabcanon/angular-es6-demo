@@ -1,9 +1,7 @@
-class TimestampCtrl {
-  
+class TimestampCtrl { 
   constructor() {
-  	this.timestamp = new Date();
+    this.timestamp = new Date();
   }
-
 }
 
 TimestampCtrl.$inject = [];
