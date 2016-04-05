@@ -1,5 +1,5 @@
 # kiosked-assignment
- An experimental project in using ES6 via SystemJS, JSPM, Gulp, Babel and AngularJS.
+ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) via [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/) and [AngularJS 1.x](https://angularjs.org/).
  
 ## About
 
@@ -37,7 +37,7 @@
 #### 2. Why not to use bower?
 
 * Some amazing libs don't support bower anymore, for example Mapbox.
-* https://github.com/mapbox/mapbox-gl-js/issues/1342
+* [Bower is effectively not developed anymore.](https://github.com/mapbox/mapbox-gl-js/issues/1342)
 * It's a good practice to let npm handle everything somehow. No need to add one more layer.
 * It requires more complicated tasks in Gulpfile in order to run.
 
@@ -74,10 +74,10 @@
 
 ## TODO List(further requirements)
 
-- [ ] Unit/Middleware/E2E Test with Karma/Chai/Protractor.
-- [ ] Integrate with systemjs-builder.
-- [ ] Automatically test, build and deploy(npm/travis-ci/Heroku).
-- [ ] Create a yeoman generator for this project.
+- [ ] Unit/Middleware/E2E Test with [Karma](https://karma-runner.github.io/0.13/index.html)/[Chai](http://chaijs.com/)/[Protractor](https://angular.github.io/protractor/#/).
+- [ ] Integrate with [systemjs-builder](https://github.com/systemjs/builder).
+- [ ] Automatically test, build and deploy([npm](https://www.npmjs.com/)/[travis-ci](https://travis-ci.org/)/[Heroku](https://www.heroku.com/home)).
+- [ ] Create a [yeoman generator](http://yeoman.io/authoring/) for this project.
 
 ## License
 
