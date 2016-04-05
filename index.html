@@ -11,15 +11,17 @@
 	<meta name="description" content="An experimental project in using ES6 with AngularJS." />
 	<meta name="author" content="Ye Huang, sysuhuangye@gmail.com" />
 	<title>Kiosked</title>
+    
+    <link rel="stylesheet" type="text/css" href="dist/app.css">
 </head>
 <body>
 	<header></header>
 	<div class="container">
-		<section id="time-section">
+		<section id="time-section" class="section-item">
 			<build-time></build-time>
 		</section>
-		<section id="popup-section" ng-controller="PopupCtrl as vm">
-			<button id="popup-button" ng-click="vm.openModal()">Click me!</button>
+		<section id="popup-section" class="section-item" ng-controller="PopupCtrl as vm">
+			<button id="popup-button" class="btn btn-yellow" ng-show="!vm.modalShown" ng-click="vm.openModal()">Click me!</button>
 			<popup-window show="vm.modalShown"></popup-window>
 		</section>
 	</div>
