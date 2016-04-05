@@ -7,6 +7,7 @@ import browserSync from 'browser-sync';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+// Lint syntax validation task
 function lint(files, options) {
   return () => {
     return gulp.src(files)
@@ -17,8 +18,10 @@ function lint(files, options) {
   };
 }
 
+// Lint check for ES6 
 gulp.task('es6lint', lint(paths.sources));
 
+// Lint check for ES5
 gulp.task('es5lint', () => {
   return gulp.src(paths.sources)
     .pipe($.jshint)
