@@ -11,15 +11,15 @@
   * how to code with AngularJS 1.x in using ES6.
   * how to provide a good structure of SASS.  
   
-## Features
+## Features(V1.0.0)
 
-* No more `bower`
-* No more `RequireJS`(replaced by `ES6 modules`)
-* AngularJS 1.x embraces `ES6`
-* Easy to install & run(`npm start`)
-* Maintain dependencies by `jspm`
-* Watch and reload webpage in real-time via `gulp` and `websocket`
-* Bootstrap the webpage via `systemjs`
+* No more `bower`.
+* No more `RequireJS`(replaced by `ES6 modules`).
+* AngularJS 1.x embraces `ES6`.
+* Easy to install & run(`npm start`).
+* Maintain dependencies by `jspm`.
+* Watch and reload the webpage in real-time via `gulp` and `websocket`.
+* Bootstrap the webpage via `systemjs`.
 
 ## Get started
 
