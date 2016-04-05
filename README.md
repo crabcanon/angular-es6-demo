@@ -9,7 +9,7 @@
   * how to use JSPM/SystemJS to maintain your project. 
   * how to construct Gulp tasks with ES6.
   * how to code with AngularJS 1.x in using ES6.
-  * a good practice of SASS.  
+  * a good practice of Sass.  
   
 ## Features(V1.0.0)
 
@@ -20,6 +20,7 @@
 * Maintain dependencies by `jspm`
 * Watch and reload the webpage in real-time via `gulp` and `websocket`
 * Bootstrap the webpage via `systemjs`
+* CSS3 Flexbox layout
 
 ## Get started
 
@@ -36,14 +37,14 @@
 
 #### 2. Why not to use bower?
 
-* Some amazing libs don't support bower anymore, for example Mapbox.
+* Some amazing libs don't support bower anymore, for example [Mapbox](https://github.com/mapbox).
 * [Bower is effectively not developed anymore.](https://github.com/mapbox/mapbox-gl-js/issues/1342)
 * It's a good practice to let npm handle everything somehow. No need to add one more layer.
-* It requires more complicated tasks in Gulpfile in order to run.
+* It requires more configurations in Gulpfile to run the app if using bower.
 
 #### 3. Why to use jspm?
 
-* JSPM is based on the standard of ES2015 modules and System loader API. Currently, Loader API is just the API of browsers and hasn't been able to be parts of ES2015(we only have a proposal from WHATWG for now). But once it becomes a standard specification, integrated with HTTP/2, we can write ES2015 modules without building. 
+* JSPM is based on the standard of ES2015 modules and System loader API. Currently, Loader API is the API of browsers and hasn't been able to be parts of ES2015(we only have a proposal from WHATWG for now). But once it becomes a standard specification, with the integration of HTTP/2, we are able to write ES2015 modules without building. 
 * But of course, it seems like JSPM is heavier(45k after compile) and not powerful enough compared to Webpack in current phase.  
 
 #### 4. I choose to be a web developer.
@@ -61,15 +62,15 @@
 - [x] A popup modal will be shown if click the button.
 - [x] Counter counting up from 0 (at least show the seconds changing).
 - [x] Close and reopen the modal.
-- [ ] Content’s font-size should be dependant on the screen size.
+- [x] Content’s font-size should be dependant on the screen size.
 - [x] Use a build tool (npm/grunt/gulp) to compose your built product.
 - [x] Use SASS (scss).
-- [ ] Show understanding of variables and functions (lighter colour).
-- [ ] Show understanding of mixins (CSS media queries).
+- [x] Show understanding of variables and functions (lighter colour).
+- [x] Show understanding of mixins (CSS media queries).
 - [x] Push the code to Github as a public open source project.
 - [x] Add a README to the Github repo containing information about building and running your code.
 - [x] A “watcher” task that watches for code changes and builds again.
-- [ ] Neatness and documentation.
+- [x] Neatness and documentation.
 - [x] Modern practices and technologies. 
 
 ## TODO List(further requirements)
