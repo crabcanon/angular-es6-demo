@@ -44,7 +44,7 @@
 #### 3. Why to use jspm?
 
 * JSPM is based on the standard of ES2015 modules and System loader API. Currently, Loader API is just the API of browsers and hasn't been able to be parts of ES2015(we only have a proposal from WHATWG for now). But once it becomes a standard specification, integrated with HTTP/2, we can write ES2015 modules without building. 
-* But of course, it seems like jspm is heavier(45k after compile) and also not powerful enough compared to Webpack in current phase.  
+* But of course, it seems like JSPM is heavier(45k after compile) and not powerful enough compared to Webpack in current phase.  
 
 #### 4. I choose to be a web developer.
 
@@ -54,7 +54,7 @@
 ## TODO List(solid requirements)
 
 - [x] Title: “Build test”.
-- [x] Paragraph: “This page was built from dynamic content at <time>”, where <time> is the time at build time.
+- [x] Paragraph: “This page was built from dynamic content at `time`”, where `time` is the time at build time.
 - [x] Button name: 'Click me'.
 - [x] The title, paragraph and button text should not be black, but should be the same colour.
 - [x] The background of the button should also be the same colour, but 25% lighter.
@@ -74,10 +74,10 @@
 
 ## TODO List(further requirements)
 
-- [ ] Unit/Middleware/E2E Test with Karma/Chai/Protractor
-- [ ] Integrate with systemjs-builder
-- [ ] Automatically test, build and deploy(npm/travis-ci/Heroku)
-- [ ] Create a yeoman generator for this project
+- [ ] Unit/Middleware/E2E Test with Karma/Chai/Protractor.
+- [ ] Integrate with systemjs-builder.
+- [ ] Automatically test, build and deploy(npm/travis-ci/Heroku).
+- [ ] Create a yeoman generator for this project.
 
 ## License
 
