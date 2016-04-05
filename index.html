@@ -11,12 +11,6 @@
 	<meta name="description" content="An experimental project in using ES6 with AngularJS." />
 	<meta name="author" content="Ye Huang, sysuhuangye@gmail.com" />
 	<title>Kiosked</title>
-
-	<script src="jspm_packages/system.js"></script>
-	<script src="system.config.js"></script>
-	<script>
-		System.import('app/app');
-	</script>
 </head>
 <body>
 	<header></header>
@@ -25,10 +19,16 @@
 			<build-time></build-time>
 		</section>
 		<section id="popup-section" ng-controller="PopupCtrl as vm">
-			<button id="popup-button" ng-click="vm.toggleModal()">Click me!</button>
-		    <popup-window show="vm.modalShown"></popup-window>
+			<button id="popup-button" ng-click="vm.openModal()">Click me!</button>
+			<popup-window show="vm.modalShown"></popup-window>
 		</section>
 	</div>
-    <footer></footer>
+	<footer></footer>
+
+	<script src="jspm_packages/system.js"></script>
+	<script src="system.config.js"></script>
+	<script>
+	System.import('app/app');
+	</script>
 </body>
 </html>
