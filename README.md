@@ -1,6 +1,9 @@
 # kiosked-assignment
  An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) via [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/) and [AngularJS 1.x](https://angularjs.org/).
  
+![Screenshot One](/screenshots/one.png) 
+![Screenshot Two](/screenshots/two.png) 
+ 
 ## About
 
 * A npm package originally designed for testing how to craft a complete webapp project from scratch(npm init & jspm init & gulp init).
@@ -10,10 +13,6 @@
   * how to construct Gulp tasks with ES6.
   * how to code with AngularJS 1.x in using ES6.
   * a good practice of Sass.
-
-![Screenshot One](/screenshots/one.png) 
-![Screenshot Two](/screenshots/two.png) 
-
   
 ## Features(V1.0.0)
 
