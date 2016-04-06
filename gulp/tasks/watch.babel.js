@@ -4,12 +4,12 @@ import browserSync from 'browser-sync';
 
 const reload = browserSync.reload;
 
-// Report function
+// Report events function
 function message(event) {
   console.log('File ' + event.path + ' was ' + event.type);
 }
 
-// Watch changes of scripts, html templates and styles
+// Watch changes, reload the webpage and report task status
 gulp.task('watch', ['build'], () => {
   gulp.watch([paths.sources], ['scripts', reload]).on('change', message);
   gulp.watch([paths.html], ['html', reload]).on('change', message);

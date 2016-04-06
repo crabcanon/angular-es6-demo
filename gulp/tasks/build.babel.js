@@ -24,7 +24,7 @@ gulp.task('styles', () => {
     .pipe(reload({stream: true}));
 });
 
-// Copy javascript files to dist folder
+// Compile javascript to dist folder
 gulp.task('scripts', () => {
   return gulp.src(paths.sources)
     .pipe($.plumber())
@@ -35,7 +35,7 @@ gulp.task('scripts', () => {
     .pipe(reload({stream: true})); 
 });
 
-// Copy html files to dist folder
+// Compile html templates to dist folder
 gulp.task('html', () => {
   return gulp.src(paths.templates)
     .pipe($.plumber())
@@ -44,7 +44,7 @@ gulp.task('html', () => {
     .pipe(gulp.dest(paths.dist)); 
 });
 
-// Clean dist folder and build 
+// Clean dist folder and rebuild 
 gulp.task('build', callback => {
   return runSequence(
     'clean',

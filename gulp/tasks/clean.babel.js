@@ -5,7 +5,7 @@ import paths from '../paths';
 
 const $ = gulpLoadPlugins();
 
-// Clean task
+// Clean dist
 gulp.task('clean', () => {
   return gulp.src([paths.dist])
     .pipe($.clean()); 
