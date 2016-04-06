@@ -11,25 +11,42 @@
     <meta name="description" content="An experimental project in using ES6 with AngularJS." />
     <meta name="author" content="Ye Huang, sysuhuangye@gmail.com" />
     <title>Kiosked</title>
+    <!-- dist/app.css -->
     <link rel="stylesheet" type="text/css" href="dist/app.css">
+    <!-- End app.css -->
   </head>
   <body>
+    <!-- header -->
     <header></header>
+    <!-- /header -->
+
+    <!-- container -->
     <div class="container">
+      <!-- BuildTime section -->
       <section id="time-section" class="section-item">
         <build-time></build-time>
       </section>
+      <!-- /BuildTime section -->
+
+      <!-- Modal section -->
       <section id="popup-section" class="section-item" ng-controller="PopupCtrl as vm">
         <button id="popup-button" class="btn btn-yellow" ng-show="!vm.modalShown" ng-click="vm.openModal()">Click me!</button>
         <popup-window show="vm.modalShown"></popup-window>
       </section>
+      <!-- /Modal -->
     </div>
-    <footer></footer>
+    <!-- /container -->
 
+    <!-- footer -->
+    <footer></footer>
+    <!-- /footer -->
+    
+    <!-- systemjs -->
     <script src="jspm_packages/system.js"></script>
     <script src="system.config.js"></script>
     <script>
       System.import('app/app');
     </script>
+    <!-- /systemjs -->
   </body>
 </html>
