@@ -1,6 +1,7 @@
 import template from './popup.tpl.html!text';
 import PopupCtrl from './popup.controller';
 
+// <popup-window show="expression"></popup-window> directive
 function popupWindow() {
   return {
     restrict: "E",

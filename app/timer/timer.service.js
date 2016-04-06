@@ -1,7 +1,7 @@
 class TimerService {
   constructor() {}
   
-  // Return the datetime with format 00D 00H 00M 00S
+  // Return the counter with format '00D 00H 00M 00S'
   render(time) {
     let days = Math.floor(time / 86400);
     let hours = Math.floor(time / 3600) % 24;
