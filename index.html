@@ -25,18 +25,18 @@
 
     <!-- container -->
     <div class="container">
-      <!-- BuildTime section -->
+      <!-- buildtime section -->
       <section id="time-section" class="section-item">
         <build-time></build-time>
       </section>
-      <!-- /BuildTime section -->
+      <!-- /buildtime section -->
 
-      <!-- Modal section -->
+      <!-- modal section -->
       <section id="popup-section" class="section-item" ng-controller="PopupCtrl as vm">
         <button id="popup-button" class="btn btn-yellow" ng-show="!vm.modalShown" ng-click="vm.openModal()">Click me!</button>
         <popup-window show="vm.modalShown"></popup-window>
       </section>
-      <!-- /Modal section -->
+      <!-- /modal section -->
     </div>
     <!-- /container -->
 
