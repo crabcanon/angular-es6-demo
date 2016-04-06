@@ -1,4 +1,4 @@
-// Import dependencies
+// Import dev-dependencies
 import $ from 'jquery';
 import angular from 'angular';
 
@@ -10,7 +10,7 @@ import timerModule from './timer/timer.module';
 // Construct angular app module via dependency injection
 let appModule = angular.module('kiosked', [timestampModule.name, popupModule.name, timerModule.name]);
 
-// Bootstrap webapp
+// Bootstrap the webpage when DOM is ready
 angular.element(document).ready(function() {
   angular.bootstrap(document, [appModule.name], {
     strictDi: true
