@@ -1,6 +1,6 @@
 class PopupCtrl {
   constructor() {
-  	// $scope.modalShown = false;
+    // $scope.modalShown = false;
     this.modalShown = false;
   }
   
