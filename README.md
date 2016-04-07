@@ -1,10 +1,13 @@
 # kiosked-assignment ([Live demo](https://kiosked-assignment.herokuapp.com/))
 An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) via [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/), [AngularJS 1.x](https://angularjs.org/), [Travis CI](https://travis-ci.org/) and [Heroku](https://dashboard.heroku.com/).
 
+[![GitHub issues](https://img.shields.io/github/issues/crabcanon/kiosked-assignment.svg)](https://github.com/crabcanon/kiosked-assignment/issues)
 [![Dependencies](https://david-dm.org/crabcanon/kiosked-assignment.svg)](https://david-dm.org/crabcanon/kiosked-assignment)
 [![devDependency Status](https://david-dm.org/crabcanon/kiosked-assignment/dev-status.svg)](https://david-dm.org/crabcanon/kiosked-assignment#info=devDependencies)
 [![Build Status](https://travis-ci.org/crabcanon/kiosked-assignment.svg?branch=master)](https://travis-ci.org/crabcanon/kiosked-assignment)
 [![Heroku](https://heroku-badge.herokuapp.com/?app=kiosked-assignment&style=flat)](https://kiosked-assignment.herokuapp.com/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/crabcanon/kiosked-assignment/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/crabcanon/kiosked-assignment.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
  
 ![Screenshot Two](/screenshots/two.png) 
@@ -34,7 +37,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * CSS3 Flexbox layout
 * Build production via `jspm`
 * Automated build test via `Travis CI`
-* Automated dependencies check via `david-dm.org`
+* Automated status check via [shields.io](http://shields.io/)
 * **Each time when you push codes to github repo, it will automatically trigger the automated build/test/deploy process of Travis CI and your final production(dist folder) will be automatically deployed to Heroku if build passed(Please follow 'Get started' to config your own setup).**
 * **You are able to check the status of dependencies/devDependencies/build/heroku deployment in real time via the status badges(You should replace the old URLs with your own in README.md).**
 
