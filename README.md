@@ -23,8 +23,8 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * Maintain dependencies by `jspm`
 * Watch and reload the webpage in real-time via `gulp` and `websocket`
 * Bootstrap the webpage via `systemjs`
-* Compile Sass via `gulp-sass`
 * CSS3 Flexbox layout
+* Build production via `jspm`
 
 ## Get started
 
@@ -39,7 +39,8 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
   * A new folder called 'dist' will be automatically generated.
   * All the .js will be compiled and minified to one single file called 'app.min.js'.
   * All the .css will be compiled and minified to one single file called 'app.min.css'.
-  * The original index.html will be rewritten and re-generated in order to remove useless codes and load new .js and .css files.
+  * The original index.html will be rewritten in order to remove useless codes and load new .js and .css files.
+  * If you want to check the production, you may simply run `cd dist` and `python -m SimpleHTTPServer`, then visit 'http://localhost:8000'.
 
 
 
