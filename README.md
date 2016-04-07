@@ -35,8 +35,8 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * Build production via `jspm`
 * Automated build test via `Travis CI`
 * Automated dependencies check via `david-dm.org`
-* *Each time when you push codes to github repo, it will automatically trigger the automated build/test/deploy process of Travis CI and your final production(dist folder) will be automatically deployed to Heroku if build passed.*
-* *You are able to check the status of dependencies/devDependencies/build/heroku deployment via the status badges(You should replace the old URLs with your own in README.md)*
+* **Each time when you push codes to github repo, it will automatically trigger the automated build/test/deploy process of Travis CI and your final production(dist folder) will be automatically deployed to Heroku if build passed.**
+* **You are able to check the status of dependencies/devDependencies/build/heroku deployment via the status badges(You should replace the old URLs with your own in README.md).**
 
 ## Get started
 
