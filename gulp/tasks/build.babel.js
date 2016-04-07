@@ -40,11 +40,23 @@ gulp.task('buildhtml', () => {
     .pipe(gulp.dest(paths.dist)); 
 });
 
+// Build server.js
+gulp.task('buildserver', () => {
+  return gulp.src(paths.server)
+    .pipe(gulp.dest('dist'));
+});
+
+// Build package.json
+gulp.task('buildpackage', () => {
+  return gulp.src(paths.package)
+    .pipe(gulp.dest('dist'));
+});
+
 // Clean dist folder and rebuild 
 gulp.task('build', callback => {
   return runSequence(
     'cleandist',
-    ['buildcss', 'buildjs', 'buildhtml'],
+    ['buildcss', 'buildjs', 'buildhtml', 'buildserver', 'buildpackage'],
     'cleanjspm', 'cleannode',
     callback    
   );

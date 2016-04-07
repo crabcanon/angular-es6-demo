@@ -13,18 +13,18 @@ gulp.task('cleantmp', () => {
 
 // Clean dist folder
 gulp.task('cleandist', () => {
-  return gulp.src([paths.dist])
+  return gulp.src([paths.root])
     .pipe($.clean()); 
 });
 
 // Clean dist/jspm_packages folder
 gulp.task('cleanjspm', () => {
-  return gulp.src('dist/jspm_packages')
+  return gulp.src('dist/public/jspm_packages')
     .pipe($.clean()); 
 });
 
 // Clean dist/node_modules folder
 gulp.task('cleannode', () => {
-  return gulp.src('dist/node_modules')
+  return gulp.src('dist/public/node_modules')
     .pipe($.clean()); 
 });
