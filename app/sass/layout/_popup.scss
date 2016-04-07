@@ -1,0 +1,33 @@
+#popup-section {
+    #popup-modal {
+        background-color: $modal-primary;
+        @include min-screen(1600px) {
+          width: 600px;
+          height: 400px;
+        }
+        @include min-screen(768px) {
+          width: 400px;
+          height: 200px; 
+        }
+        @include max-screen(767px) {
+          width: 200px;
+          height: 200px;
+        }
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(flex-start);
+        @include align-items(flex-start); 
+        @include align-content(flex-start);
+        .modal-header {
+            width: 100%;
+            @include flex(0 1 auto);
+            @include order(0);
+            @include align-self(center);
+        }
+        .modal-content {
+            @include flex(1 1 auto);
+            @include order(1);
+            @include align-self(center);
+        }
+    }
+}

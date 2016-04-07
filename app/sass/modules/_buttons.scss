@@ -1,0 +1,29 @@
+@mixin button-bg($bg) {
+  background: lighten($bg, 25%);
+  &:hover {
+    background: lighten($bg, 15%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg, 25%);
+  } 
+}
+
+.btn {
+    color: $button-primary;
+    text-decoration:none;
+    padding:5px 10px;
+    border: 0px;
+    font-family: 'Racing Sans One', cursive;
+    @include responsive-font-size (
+        $min-font-size: 1em,
+        $max-font-size: 2em,
+        $min-screen-width: 640px,
+        $max-screen-width: 1200px,
+        $font-size-step: 0.3em /* optional, default: 0.1em */
+    );
+}
+
+.btn-yellow {
+   @include button-bg($button-primary);
+}

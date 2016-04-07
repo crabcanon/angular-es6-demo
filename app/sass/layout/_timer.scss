@@ -1,0 +1,12 @@
+#timer {
+    color: $paragraph-primary;
+    margin-top: 20px;
+    padding: 20px;
+    @include responsive-font-size (
+        $min-font-size: 1.2em,
+        $max-font-size: 2em,
+        $min-screen-width: 640px,
+        $max-screen-width: 1200px,
+        $font-size-step: 0.3em /* optional, default: 0.1em */
+    );
+}
