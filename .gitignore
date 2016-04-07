@@ -21,8 +21,11 @@ node_modules
 # Directory for jspm
 jspm_packages
 
-# Compiled directory
+# Directory for production
 dist
+
+# Directory for .tmp
+.tmp
 
 # Optional npm cache directory
 .npm
