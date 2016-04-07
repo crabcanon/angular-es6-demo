@@ -30,6 +30,9 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * Bootstrap the webpage via `systemjs`
 * CSS3 Flexbox layout
 * Build production via `jspm`
+* Automated build test via `Travis CI`
+* Automated dependencies check via `david-dm.org`
+* Heroku deployment
 
 ## Get started
 
