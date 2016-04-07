@@ -1,8 +1,8 @@
 # kiosked-assignment ([Live demo](https://fathomless-meadow-59040.herokuapp.com/))
 An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) via [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/) and [AngularJS 1.x](https://angularjs.org/).
 
-[![Dependencies](https://david-dm.org/crabcanon/kiosked-assignment.svg)]
-[![Heroku](https://heroku-badge.herokuapp.com/?app=fathomless-meadow-59040style=flat&svg=1)]
+![Dependencies](https://david-dm.org/crabcanon/kiosked-assignment.svg)
+![Heroku](https://heroku-badge.herokuapp.com/?app=fathomless-meadow-59040&style=flat&svg=1)
  
 ![Screenshot Two](/screenshots/two.png) 
  
