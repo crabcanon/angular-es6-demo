@@ -17,6 +17,7 @@ install:
 - npm install
 script:
 - npm start
+- gulp build
 cache:
   directories:
   - node_modules
