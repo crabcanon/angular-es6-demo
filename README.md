@@ -1,5 +1,5 @@
 # kiosked-assignment ([Live demo](https://kiosked-assignment.herokuapp.com/))
-An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) via [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/) and [AngularJS 1.x](https://angularjs.org/).
+An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) via [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/), [AngularJS 1.x](https://angularjs.org/), [Travis CI](https://travis-ci.org/) and [Heroku](https://dashboard.heroku.com/).
 
 [![Dependencies](https://david-dm.org/crabcanon/kiosked-assignment.svg)](https://david-dm.org/crabcanon/kiosked-assignment)
 [![devDependency Status](https://david-dm.org/crabcanon/kiosked-assignment/dev-status.svg)](https://david-dm.org/crabcanon/kiosked-assignment#info=devDependencies)
@@ -80,13 +80,25 @@ deploy:
 ```
 * Login to your Heroku account: `heroku login`.
 * Create a new Heroku app: `heroku create`.
+* Change the app name to whatever you want on [Heroku](https://dashboard.heroku.com).
 * Add an encrypted version of your heroku api key to your .travis.yml file: `travis encrypt $(heroku auth:token) --add deploy.api_key`.
 * Replace the app name in .travis.yml to your Heroku app name.
 * Replace the repo name to your github repo name.
-* Or you could directly use the command `travis setup heroku` to acheive above tasks.
-* Push your changes to github.
+* Or you could directly use the command `travis setup heroku` to achieve above tasks.
+* After above steps, your .travis.yml will look like:
+```sh
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  api_key:
+    secure: [encrypted version of your heroku api key]
+  app: your-heroku-app-name
+  on:
+    repo: your-github-account/your-github-repo
+```
+* Push changes to github.
 * Visit https://travis-ci.org/ and activate your repository.
-* Then Travis CI will be able to test, build and deploy the final production to your Heroku account automatically.
+* Then Travis CI will be able to test, build and deploy the final production to your Heroku account automatically. Visit 'https://your-heroku-app-name.herokuapp.com'.
 
 ##### *Manually deploy*
 
@@ -103,7 +115,7 @@ $ git remote -v
 $ heroku git:remote -a your-remote.git
 $ git push heroku master
 ```
-* Then Heroku will automatically build and serve your production, and the URL will somehow look like this 'https://your-heroku-remote.herokuapp.com'.
+* Visit 'https://your-heroku-app-name.herokuapp.com'.
 
 ## Motivation
 
@@ -123,9 +135,14 @@ $ git push heroku master
 #### 3. Why to use jspm?
 
 * JSPM is based on the standard of ES2015 modules and System loader API. Currently, Loader API is the API of browsers and hasn't been able to be parts of ES2015(we only have a proposal from WHATWG for now). But once it becomes a standard specification, with the integration of HTTP/2, we are able to write ES2015 modules without building. 
-* But of course, it seems like JSPM is heavier(45k after compile) and not powerful enough compared to Webpack in current phase.  
+* But of course, it seems like JSPM is heavier(45k after compile) and not powerful enough compared to Webpack in current phase.
 
-#### 4. I choose to be a web developer.
+#### 4. Why to use Travis CI?
+
+* Travis CI is an amazing tool for automated test/build/deploy workflow. With the integration of Travis CI, you are able to test and deploy the production to almost all the environments and platforms in real time without worrying about all the setups and so on. I would say the most remarkable advantage is that it will dramatically save your time and make things easier and faster.
+* The alternatives to Travis CI include: [circleci.com](https://circleci.com/), [codeship.com](https://codeship.com/), [drone.io](https://drone.io/), [semaphoreci.com](https://semaphoreci.com/), [solanolabs.com](https://www.solanolabs.com/), [wercker.com](http://wercker.com/), [snap-ci.com](https://snap-ci.com/), [buildbot.net](http://buildbot.net/), [cloudbees.com](https://www.cloudbees.com/), [container-solutions.com](http://container-solutions.com/).
+
+#### 5. I choose to be a web developer.
 
 * If you try to embrace web technologies, you actually choose a way to embrace changes.
 * [A good article to know.](https://jjperezaguinaga.com/2014/03/19/why-cant-we-find-front-end-developers/)
