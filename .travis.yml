@@ -10,10 +10,10 @@ branches:
   only:
   - master
 before_script:
-- npm install -g gulp
-- npm install -g jspm
+- npm install
+- jspm install
 script:
-- npm start
+- gulp build
 cache:
   directories:
   - node_modules
