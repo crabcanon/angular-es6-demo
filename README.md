@@ -5,6 +5,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 [![devDependency Status](https://david-dm.org/crabcanon/kiosked-assignment/dev-status.svg)](https://david-dm.org/crabcanon/kiosked-assignment#info=devDependencies)
 [![Heroku](https://heroku-badge.herokuapp.com/?app=fathomless-meadow-59040&style=flat&svg=1)](https://fathomless-meadow-59040.herokuapp.com/)
 [![Build Status](https://travis-ci.org/crabcanon/kiosked-assignment.svg?branch=master)](https://travis-ci.org/crabcanon/kiosked-assignment)
+[![Coverage Status](https://coveralls.io/repos/github/crabcanon/kiosked-assignment/badge.svg?branch=master)](https://coveralls.io/github/crabcanon/kiosked-assignment?branch=master)
  
 ![Screenshot Two](/screenshots/two.png) 
  
