@@ -4,14 +4,14 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 [![Dependencies](https://david-dm.org/crabcanon/kiosked-assignment.svg)](https://david-dm.org/crabcanon/kiosked-assignment)
 [![devDependency Status](https://david-dm.org/crabcanon/kiosked-assignment/dev-status.svg)](https://david-dm.org/crabcanon/kiosked-assignment#info=devDependencies)
 [![Build Status](https://travis-ci.org/crabcanon/kiosked-assignment.svg?branch=master)](https://travis-ci.org/crabcanon/kiosked-assignment)
-[![Heroku](https://heroku-badge.herokuapp.com/?app=fathomless-meadow-59040&style=flat)](https://fathomless-meadow-59040.herokuapp.com/)
+[![Heroku](https://heroku-badge.herokuapp.com/?app=kiosked-assignment&style=flat)](https://kiosked-assignment.herokuapp.com/)
 
  
 ![Screenshot Two](/screenshots/two.png) 
  
 ## About
 
-* This is a npm package originally designed for testing how to craft a complete webapp project from scratch(npm init & jspm init & gulp init) by employing modern practices and technologies.
+* This is a npm package originally designed for testing how to craft a complete webapp project from scratch(npm init & jspm init & gulp init) to the final production by employing modern practices and technologies.
 * This package could be used to explore:
   * new features of ECMAScript 6.
   * how to use JSPM/SystemJS to maintain your project. 
@@ -59,18 +59,45 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 
 #### 2. How to depoly your production to Heroku?
 
-* Install [Heroku Toolbelt](https://toolbelt.heroku.com/).
-* Run command `heroku login` to login to your heroku account.
-* `cd dist`
-* `git init`
-* `git add .`
-* `git commit -m "first commit"`
-* `heroku create`
-* `git remote -v`
-* `heroku git:remote -a your-remote.git`
-* `git push heroku master`
-* Then Heroku will automatically build and serve your production, and the URL will somehow look like this 'https://your-heroku-remote.herokuapp.com'.
+##### - Automatically deploy
 
+As we are using Travis CI for automated test, build and deployment, you are able to do it in this way as well.
+
+* Install [Heroku Toolbelt](https://toolbelt.heroku.com/).
+* Install travis RubyGem on your computer: `gem install travis`.
+* Fork this repository to your github account and clone it to your local computer.
+* Check the .travis.yml file of your repository, you will find:
+```sh
+deploy:
+  app: [Heroku app name] - kiosked-assignment
+  provider: heroku
+  api_key:
+    secure: [encrypted version of your heroku api key]
+```
+* Login to your Heroku account: `heroku login`.
+* Create a new Heroku app: `heroku create`.
+* Add an encrypted version of your heroku api key to your .travis.yml file: `travis encrypt $(heroku auth:token) --add deploy.api_key`.
+* Replace the app name in .travis.yml to your Heroku app name.
+* Push your changes to github.
+* Visit https://travis-ci.org/ and activate your repository.
+* Then Travis CI will be able to help you test, build and deploy this app to your Heroku account automatically.
+
+##### - Manually deploy
+
+* Install [Heroku Toolbelt](https://toolbelt.heroku.com/).
+* Run following commands:
+```sh
+$ heroku login
+$ cd dist
+$ git init
+$ git add .
+$ git commit -m "first commit"
+$ heroku create
+$ git remote -v
+$ heroku git:remote -a your-remote.git
+$ git push heroku master
+```
+* Then Heroku will automatically build and serve your production, and the URL will somehow look like this 'https://your-heroku-remote.herokuapp.com'.
 
 ## Motivation
 
@@ -122,7 +149,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 
 - [ ] Unit/Middleware/E2E Test with [Karma](https://karma-runner.github.io/0.13/index.html)/[Chai](http://chaijs.com/)/[Protractor](https://angular.github.io/protractor/#/).
 - [x] Integrate with [systemjs-builder](https://github.com/systemjs/builder) or [jspm bundle](http://jspm.io/docs/production-workflows.html).
-- [x] Automatically build and deploy([npm](https://www.npmjs.com/)/[travis-ci](https://travis-ci.org/)/[Heroku](https://www.heroku.com/home)).
+- [x] Automatically test, build and deploy([npm](https://www.npmjs.com/)/[travis-ci](https://travis-ci.org/)/[Heroku](https://www.heroku.com/home)).
 - [ ] Create a [yeoman generator](http://yeoman.io/authoring/) for this project.
 
 ## License
