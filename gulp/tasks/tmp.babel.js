@@ -35,6 +35,7 @@ gulp.task('scripts', () => {
     .pipe(reload({stream: true})); 
 });
 
+
 // Clean .tmp folder and rebuild 
 gulp.task('tmp', callback => {
   return runSequence(
