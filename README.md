@@ -28,6 +28,8 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 
 ## Get started
 
+#### 1. Develop and build production
+
 * Clone the project
 * `npm start`
   * For development use.
@@ -43,7 +45,9 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
   * In order to easily deploy your production to [Heroku](https://www.heroku.com/home) using Node.js to serve the generated static files, I additionally create two extra files in the dist folder(server.js and package.json). 
   * If you want to check the production, you may simply run `cd dist/public` and `python -m SimpleHTTPServer`, then visit 'http://localhost:8000'.
 
-How to depoly your production to Heroku?
+
+#### 2. How to depoly your production to Heroku?
+
 * Install [Heroku Toolbelt](https://toolbelt.heroku.com/).
 * Run command `heroku login` to login to your heroku account.
 * `cd dist`
