@@ -24,6 +24,9 @@ jspm_packages
 # Directory for .tmp
 .tmp
 
+# Directory for production
+dist
+
 # Optional npm cache directory
 .npm
 
