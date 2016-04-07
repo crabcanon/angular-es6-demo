@@ -1,4 +1,4 @@
-# kiosked-assignment
+# kiosked-assignment ([Live demo](https://fathomless-meadow-59040.herokuapp.com/))
 An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) via [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/) and [AngularJS 1.x](https://angularjs.org/).
  
 ![Screenshot One](/screenshots/one.png) 
@@ -37,11 +37,24 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * `gulp build` 
   * For production use.
   * A new folder called 'dist' will be automatically generated.
-  * All the .js will be compiled and minified to one single file called 'app.min.js'.
-  * All the .css will be compiled and minified to one single file called 'app.min.css'.
-  * The original index.html will be rewritten in order to remove useless codes and load new .js and .css files.
-  * If you want to check the production, you may simply run `cd dist` and `python -m SimpleHTTPServer`, then visit 'http://localhost:8000'.
+  * All the .js will be compiled and minified to one single file called 'app.min.js'(in dist/public folder).
+  * All the .css will be compiled and minified to one single file called 'app.min.css'(in dist/public folder).
+  * The original index.html will be rewritten in order to remove useless codes and load new .js and .css files(in dist/public folder).
+  * In order to easily deploy your production to [Heroku](https://www.heroku.com/home) using Node.js to serve the generated static files, I additionally create two extra files in the dist folder(server.js and package.json). 
+  * If you want to check the production, you may simply run `cd dist/public` and `python -m SimpleHTTPServer`, then visit 'http://localhost:8000'.
 
+How to depoly your production to Heroku?
+* Install [Heroku Toolbelt](https://toolbelt.heroku.com/).
+* Run command `heroku login` to login to your heroku account.
+* `cd dist`
+* `git init`
+* `git add .`
+* `git commit -m "first commit"`
+* `heroku create`
+* `git remote -v`
+* `heroku git:remote -a your-remote.git`
+* `git push heroku master`
+* Then Heroku will automatically build and serve your production, and the URL will somehow look like this 'https://your-heroku-remote.herokuapp.com'.
 
 
 ## Motivation
@@ -93,7 +106,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 ## TODO List(further requirements)
 
 - [ ] Unit/Middleware/E2E Test with [Karma](https://karma-runner.github.io/0.13/index.html)/[Chai](http://chaijs.com/)/[Protractor](https://angular.github.io/protractor/#/).
-- [x] Integrate with [systemjs-builder](https://github.com/systemjs/builder).
+- [x] Integrate with [systemjs-builder](https://github.com/systemjs/builder) or [jspm bundle](http://jspm.io/docs/production-workflows.html).
 - [x] Automatically build and deploy([npm](https://www.npmjs.com/)/[travis-ci](https://travis-ci.org/)/[Heroku](https://www.heroku.com/home)).
 - [ ] Create a [yeoman generator](http://yeoman.io/authoring/) for this project.
 
