@@ -18,9 +18,9 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
   * how to construct Gulp tasks with ES6.
   * how to code with AngularJS 1.x in using ES6.
   * a good practice of Sass.
-  * how to build the production via `jspm bundle`.
+  * how to bundle a build via `jspm bundle`.
   * how to use Travis CI for build test.
-  * how to deploy your node.js production to Heroku.
+  * how to deploy a Node.js production to Heroku.
   
 ## Features(V1.0.0)
 
@@ -46,15 +46,15 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
   * For development use.
   * A new folder called '.tmp' will be automatically generated.
   * Your default browser will automatically load the webpage which will be refreshed each time when you have anything to change in 'app' folder.
-  * The report will be shown in your console if anything goes wrong.
+  * Report will be shown in your console if anything goes wrong.
 * `gulp build` 
   * For production use.
   * A new folder called 'dist' will be automatically generated.
-  * All the .js will be compiled and minified to one single file called 'app.min.js'(in dist/public folder).
-  * All the .css will be compiled and minified to one single file called 'app.min.css'(in dist/public folder).
+  * All the required .js will be compiled and minified to one single file called 'app.min.js'(in dist/public folder).
+  * All the required .scss will be compiled and minified to one single file called 'app.min.css'(in dist/public folder).
   * The original index.html will be rewritten in order to remove useless codes and load new .js and .css files(in dist/public folder).
-  * In order to easily deploy your production to [Heroku](https://www.heroku.com/home) using Node.js to serve the generated static files, I additionally create two extra files in the dist folder(server.js and package.json). 
-  * If you want to check the production, you may simply run `cd dist/public` and `python -m SimpleHTTPServer`, then visit 'http://localhost:8000'.
+  * In order to easily deploy the production to [Heroku](https://www.heroku.com/home) by using Node.js to serve the generated static files, I additionally create two extra files in the dist folder(server.js and package.json). 
+  * If you want to check the production, simply run `cd dist/public` and `python -m SimpleHTTPServer`, then visit 'http://localhost:8000'.
 
 
 #### 2. How to depoly your production to Heroku?
@@ -65,19 +65,24 @@ As we are using Travis CI for automated test, build and deployment, you are able
 
 * Install [Heroku Toolbelt](https://toolbelt.heroku.com/).
 * Install travis RubyGem on your computer: `gem install travis`.
-* Fork this repository to your github account and clone it to your local computer.
+* Fork this repository and clone.
 * Check the .travis.yml file of your repository, you will find:
 ```sh
 deploy:
-  app: [Heroku app name] - kiosked-assignment
   provider: heroku
+  skip_cleanup: true
   api_key:
     secure: [encrypted version of your heroku api key]
+  app: kiosked-assignment
+  on:
+    repo: crabcanon/kiosked-assignment
 ```
 * Login to your Heroku account: `heroku login`.
 * Create a new Heroku app: `heroku create`.
 * Add an encrypted version of your heroku api key to your .travis.yml file: `travis encrypt $(heroku auth:token) --add deploy.api_key`.
 * Replace the app name in .travis.yml to your Heroku app name.
+* Replace the repo name to your github repo name.
+* Or you could directly use the command `travis setup heroku` to acheive above tasks.
 * Push your changes to github.
 * Visit https://travis-ci.org/ and activate your repository.
 * Then Travis CI will be able to test, build and deploy the final production to your Heroku account automatically.
