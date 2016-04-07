@@ -30,12 +30,18 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 
 * Clone the project
 * `npm start`
+  * For development use.
+  * A new folder called '.tmp' will be automatically generated.
+  * Your default browser will automatically load the webpage which will be refreshed each time when you have anything to change in 'app' folder.
+  * The report will be shown in your console if anything goes wrong.
+* `gulp build` 
+  * For production use.
+  * A new folder called 'dist' will be automatically generated.
+  * All the .js will be compiled and minified to one single file called 'app.min.js'.
+  * All the .css will be compiled and minified to one single file called 'app.min.css'.
+  * The original index.html will be rewritten and re-generated in order to remove useless codes and load new .js and .css files.
 
-If there are some problems, try to run following commands(same as `npm start`):
 
-* `npm install`
-* `jspm install`
-* `gulp watch serve`
 
 ## Motivation
 
@@ -86,8 +92,8 @@ If there are some problems, try to run following commands(same as `npm start`):
 ## TODO List(further requirements)
 
 - [ ] Unit/Middleware/E2E Test with [Karma](https://karma-runner.github.io/0.13/index.html)/[Chai](http://chaijs.com/)/[Protractor](https://angular.github.io/protractor/#/).
-- [ ] Integrate with [systemjs-builder](https://github.com/systemjs/builder).
-- [ ] Automatically test, build and deploy([npm](https://www.npmjs.com/)/[travis-ci](https://travis-ci.org/)/[Heroku](https://www.heroku.com/home)).
+- [x] Integrate with [systemjs-builder](https://github.com/systemjs/builder).
+- [x] Automatically build and deploy([npm](https://www.npmjs.com/)/[travis-ci](https://travis-ci.org/)/[Heroku](https://www.heroku.com/home)).
 - [ ] Create a [yeoman generator](http://yeoman.io/authoring/) for this project.
 
 ## License
