@@ -18,6 +18,9 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
   * how to construct Gulp tasks with ES6.
   * how to code with AngularJS 1.x in using ES6.
   * a good practice of Sass.
+  * how to build the production via `jspm bundle`.
+  * how to use Travis CI for build test.
+  * how to deploy your node.js production to Heroku.
   
 ## Features(V1.0.0)
 
