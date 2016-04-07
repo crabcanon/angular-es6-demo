@@ -21,9 +21,6 @@ node_modules
 # Directory for jspm
 jspm_packages
 
-# Directory for production
-dist
-
 # Directory for .tmp
 .tmp
 
