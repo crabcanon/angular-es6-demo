@@ -1,12 +1,12 @@
 module.exports = {
   // JS sources.
-  sources: 'app/**/*.js',
+  sources: 'app/js/**/*.js',
   // HTML sources.
   html: '**/*.html',
-  // AngularJS templates.
-  templates: 'app/**/*.html',
   // SASS sources.
   sass: 'app/sass/**/*.scss',
+  // .tmp
+  tmp: '.tmp',
   // Production folder.
   dist: 'dist'  
 };
