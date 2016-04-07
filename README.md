@@ -59,7 +59,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 
 #### 2. How to depoly your production to Heroku?
 
-##### - Automatically deploy
+##### *Automatically deploy*
 
 As we are using Travis CI for automated test, build and deployment, you are able to do it in this way as well.
 
@@ -80,9 +80,9 @@ deploy:
 * Replace the app name in .travis.yml to your Heroku app name.
 * Push your changes to github.
 * Visit https://travis-ci.org/ and activate your repository.
-* Then Travis CI will be able to help you test, build and deploy this app to your Heroku account automatically.
+* Then Travis CI will be able to test, build and deploy the final production to your Heroku account automatically.
 
-##### - Manually deploy
+##### *Manually deploy*
 
 * Install [Heroku Toolbelt](https://toolbelt.heroku.com/).
 * Run following commands:
