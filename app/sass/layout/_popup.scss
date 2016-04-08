@@ -10,8 +10,8 @@
           height: 200px; 
         }
         @include max-screen(767px) {
-          width: 200px;
-          height: 200px;
+          width: 250px;
+          height: 180px;
         }
         @include flexbox();
         @include flex-direction(column);
