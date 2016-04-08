@@ -8,7 +8,6 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 [![Heroku](https://heroku-badge.herokuapp.com/?app=kiosked-assignment&style=flat)](https://kiosked-assignment.herokuapp.com/)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/crabcanon/kiosked-assignment/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/crabcanon/kiosked-assignment.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
-
  
 ![Screenshot Two](/screenshots/heroku.png)  
  
