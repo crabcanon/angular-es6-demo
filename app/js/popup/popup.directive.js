@@ -25,7 +25,7 @@ function popupWindow() {
     link: function(scope, element) {
       let ctrl = scope.vm;
       ctrl.hideModal = () => { ctrl.show = false; }
-      ctrl.openModal = () => { ctrl.show = true; }
+      ctrl.openModal = () => { ctrl.show = !ctrl.show; }
     }
   };
 }
