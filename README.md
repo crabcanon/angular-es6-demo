@@ -1,5 +1,5 @@
 # kiosked-assignment ([Live demo](https://kiosked-assignment.herokuapp.com/))
-An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla), [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/), [AngularJS 1.x](https://angularjs.org/), [Travis CI](https://travis-ci.org/) and [Heroku](https://dashboard.heroku.com/).
+An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla), [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/), [AngularJS 1.x](https://angularjs.org/), [Sass](http://sass-lang.com/), [Travis CI](https://travis-ci.org/) and [Heroku](https://dashboard.heroku.com/).
 
 [![GitHub issues](https://img.shields.io/github/issues/crabcanon/kiosked-assignment.svg)](https://github.com/crabcanon/kiosked-assignment/issues)
 [![Dependencies](https://david-dm.org/crabcanon/kiosked-assignment.svg)](https://david-dm.org/crabcanon/kiosked-assignment)
@@ -10,7 +10,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/crabcanon/kiosked-assignment.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
  
-![Screenshot Two](/screenshots/two.png) 
+![Screenshot Two](/screenshots/heroku.png)  
  
 ## About
 
