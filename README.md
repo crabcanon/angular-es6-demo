@@ -1,5 +1,5 @@
 # kiosked-assignment ([Live demo](https://kiosked-assignment.herokuapp.com/))
-An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla) via [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/), [AngularJS 1.x](https://angularjs.org/), [Travis CI](https://travis-ci.org/) and [Heroku](https://dashboard.heroku.com/).
+An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla), [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/), [AngularJS 1.x](https://angularjs.org/), [Travis CI](https://travis-ci.org/) and [Heroku](https://dashboard.heroku.com/).
 
 [![GitHub issues](https://img.shields.io/github/issues/crabcanon/kiosked-assignment.svg)](https://github.com/crabcanon/kiosked-assignment/issues)
 [![Dependencies](https://david-dm.org/crabcanon/kiosked-assignment.svg)](https://david-dm.org/crabcanon/kiosked-assignment)
@@ -38,8 +38,8 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * Build production via `jspm`
 * Automated build test via `Travis CI`
 * Automated status check via [shields.io](http://shields.io/)
-* **Each time when you push codes to github repo, it will automatically trigger the automated build/test/deploy process of Travis CI and your final production(dist folder) will be automatically deployed to Heroku if build passed(Please follow 'Get started' to config your own setup).**
-* **You are able to check the status of dependencies/devDependencies/build/heroku deployment in real time via the status badges(You should replace the old URLs with your own in README.md).**
+* **Each time when you push codes to github repo, it will trigger the automated build/test/deploy process of Travis CI and your final production(dist folder) will be automatically deployed to Heroku if build passed(Please follow 'Get started' to config your own setup).**
+* **You are able to check the status of github issues/dependencies/devDependencies/build/heroku deployment in real time via the status badges(You should replace the old URLs with your own in README.md).**
 
 ## Get started
 
@@ -48,15 +48,15 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * Clone the project
 * `npm start`
   * For development use.
-  * A new folder called '.tmp' will be automatically generated.
+  * A new '.tmp' folder will be generated.
   * Your default browser will automatically load the webpage which will be refreshed each time when you have anything to change in 'app' folder.
   * Report will be shown in your console if anything goes wrong.
 * `gulp build` 
   * For production use.
-  * A new folder called 'dist' will be automatically generated.
+  * A new 'dist' folder will be generated.
   * All the required .js will be compiled and minified to one single file called 'app.min.js'(in dist/public folder).
   * All the required .scss will be compiled and minified to one single file called 'app.min.css'(in dist/public folder).
-  * The original index.html will be rewritten in order to remove useless codes and load new .js and .css files(in dist/public folder).
+  * The original index.html will be rewritten in order to remove useless codes and load new resources(in dist/public folder).
   * In order to easily deploy the production to [Heroku](https://www.heroku.com/home) by using Node.js to serve the generated static files, I additionally create two extra files in the dist folder(server.js and package.json). 
   * If you want to check the production, simply run `cd dist/public` and `python -m SimpleHTTPServer`, then visit 'http://localhost:8000'.
 
@@ -65,7 +65,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 
 ##### *Automatically deploy*
 
-As we are using Travis CI for automated test, build and deployment, you are able to do it in this way as well.
+As we are using Travis CI for automated test, build and deployment, you are able to do it same way.
 
 * Install [Heroku Toolbelt](https://toolbelt.heroku.com/).
 * Install travis RubyGem on your computer: `gem install travis`.
@@ -143,7 +143,7 @@ $ git push heroku master
 #### 4. Why to use Travis CI?
 
 * Travis CI is an amazing tool for automated test/build/deploy workflow. With the integration of Travis CI, you are able to test and deploy the production to almost all the environments and platforms in real time without worrying about all the setups and so on. I would say the most remarkable advantage is that it will dramatically save your time and make things easier and faster.
-* The alternatives to Travis CI include: [circleci.com](https://circleci.com/), [codeship.com](https://codeship.com/), [drone.io](https://drone.io/), [semaphoreci.com](https://semaphoreci.com/), [solanolabs.com](https://www.solanolabs.com/), [wercker.com](http://wercker.com/), [snap-ci.com](https://snap-ci.com/), [buildbot.net](http://buildbot.net/), [cloudbees.com](https://www.cloudbees.com/), [container-solutions.com](http://container-solutions.com/).
+* The alternatives to Travis CI include: [jenkins.io](https://jenkins.io/), [circleci.com](https://circleci.com/), [codeship.com](https://codeship.com/), [drone.io](https://drone.io/), [semaphoreci.com](https://semaphoreci.com/), [solanolabs.com](https://www.solanolabs.com/), [wercker.com](http://wercker.com/), [snap-ci.com](https://snap-ci.com/), [buildbot.net](http://buildbot.net/), [cloudbees.com](https://www.cloudbees.com/), [container-solutions.com](http://container-solutions.com/).
 
 #### 5. I choose to be a web developer.
 
