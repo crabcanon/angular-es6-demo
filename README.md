@@ -84,10 +84,10 @@ deploy:
 * Create a new Heroku app: `heroku create`.
 * Change the app name to whatever you want on [Heroku](https://dashboard.heroku.com).
 * Add an encrypted version of your heroku api key to your .travis.yml file: `travis encrypt $(heroku auth:token) --add deploy.api_key`.
-* Replace the app name in .travis.yml to your Heroku app name.
+* Replace the app name in .travis.yml to your heroku app name.
 * Replace the repo name to your github repo name.
 * Or you could directly use the command `travis setup heroku` to achieve above tasks.
-* After above steps, your .travis.yml will look like:
+* The your .travis.yml will look like:
 ```sh
 deploy:
   provider: heroku
@@ -141,7 +141,7 @@ $ git push heroku master
 
 #### 4. Why to use Travis CI?
 
-* Travis CI is an amazing tool for automated test/build/deploy workflow. With the integration of Travis CI, you are able to test and deploy the production to almost all the environments and platforms in real time without worrying about all the setups and so on. I would say the most remarkable advantage is that it will dramatically save your time and make things easier and faster.
+* Travis CI is an amazing tool for automated test/build/deploy workflow. With the integration of Travis CI, you are able to test and deploy the production to almost all the environments and platforms in real time without worrying about boring setups and so on. The most remarkable advantage is that it will dramatically save your time and make things easier and faster.
 * The alternatives to Travis CI include: [jenkins.io](https://jenkins.io/), [circleci.com](https://circleci.com/), [codeship.com](https://codeship.com/), [drone.io](https://drone.io/), [semaphoreci.com](https://semaphoreci.com/), [solanolabs.com](https://www.solanolabs.com/), [wercker.com](http://wercker.com/), [snap-ci.com](https://snap-ci.com/), [buildbot.net](http://buildbot.net/), [cloudbees.com](https://www.cloudbees.com/), [container-solutions.com](http://container-solutions.com/).
 
 #### 5. I choose to be a web developer.
