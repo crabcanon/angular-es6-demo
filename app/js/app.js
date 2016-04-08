@@ -1,5 +1,4 @@
 // Import dev-dependencies
-import $ from 'jquery';
 import angular from 'angular';
 
 // Import directive modules
