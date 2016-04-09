@@ -19,7 +19,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
   * how to construct Gulp tasks with ES6.
   * how to code with AngularJS 1.x in using ES6.
   * a good practice of Sass.
-  * how to bundle a build via `jspm bundle`.
+  * how to build a bundle via `jspm bundle`.
   * how to use Travis CI for build test.
   * how to automatically test and deploy a Node.js production to Heroku.
   
@@ -30,7 +30,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * AngularJS 1.x embraces `ES6`.
 * Easy to install & run(`npm start`)
 * Maintain dependencies by `jspm`
-* Watch and reload the webpage in real-time via `gulp` and `websocket`
+* Watch and reload the webpage in real-time via `gulp` and `browser-sync`
 * Bootstrap the webpage via `systemjs`
 * CSS3 Flexbox layout
 * Build production via `jspm`
@@ -55,7 +55,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
   * All the required .scss will be compiled and minified to one single file called 'app.min.css'(in dist/public folder).
   * The original index.html will be rewritten in order to remove useless codes and load new resources(in dist/public folder).
   * In order to easily deploy the production to [Heroku](https://www.heroku.com/home) by using Node.js to serve the generated static files, I additionally create two extra files in the dist folder(server.js and package.json). 
-  * If you want to check the production, simply run `cd dist/public` and `python -m SimpleHTTPServer`, then visit 'http://localhost:8000'.
+  * If you want to check the production, simply run `cd dist/public` and `python -m SimpleHTTPServer`, then visit 'http://localhost:8000'. Or the easiest way to do in this case(static webpage), is to double-click the index.html file located in dist/public folder.
 
 
 #### 2. How to depoly your production to Heroku?
