@@ -7,7 +7,6 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 [![Build Status](https://travis-ci.org/crabcanon/kiosked-assignment.svg?branch=master)](https://travis-ci.org/crabcanon/kiosked-assignment)
 [![Heroku](https://heroku-badge.herokuapp.com/?app=kiosked-assignment&style=flat)](https://kiosked-assignment.herokuapp.com/)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/crabcanon/kiosked-assignment/master/LICENSE)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/crabcanon/kiosked-assignment.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
  
 ![Screenshot Two](/screenshots/heroku.png)  
  
@@ -38,7 +37,6 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * Automated build test via `Travis CI`
 * Automated status check via [shields.io](http://shields.io/)
 * **Each time when you push codes to github repo, it will trigger the automated build/test/deploy process of Travis CI and your final production(dist folder) will be automatically deployed to Heroku if build passed(Please follow 'Get started' to config your own setup).**
-* **You are able to check the status of github issues/dependencies/devDependencies/build/heroku deployment in real time via the status badges(You should replace the old URLs with your own in README.md).**
 
 ## Get started
 
@@ -142,7 +140,7 @@ $ git push heroku master
 #### 4. Why to use Travis CI?
 
 * Travis CI is an amazing tool for automated test/build/deploy workflow. With the integration of Travis CI, you are able to test and deploy the production to almost all the environments and platforms in real time without worrying about boring setups and so on. The most remarkable advantage is that it will dramatically save your time and make things easier and faster.
-* The alternatives to Travis CI include: [jenkins.io](https://jenkins.io/), [circleci.com](https://circleci.com/), [codeship.com](https://codeship.com/), [drone.io](https://drone.io/), [semaphoreci.com](https://semaphoreci.com/), [solanolabs.com](https://www.solanolabs.com/), [wercker.com](http://wercker.com/), [snap-ci.com](https://snap-ci.com/), [buildbot.net](http://buildbot.net/), [cloudbees.com](https://www.cloudbees.com/), [container-solutions.com](http://container-solutions.com/).
+* The alternatives to Travis CI include: [circleci.com](https://circleci.com/), [jenkins.io](https://jenkins.io/), [codeship.com](https://codeship.com/), [drone.io](https://drone.io/), [semaphoreci.com](https://semaphoreci.com/), [solanolabs.com](https://www.solanolabs.com/), [wercker.com](http://wercker.com/), [snap-ci.com](https://snap-ci.com/), [buildbot.net](http://buildbot.net/), [cloudbees.com](https://www.cloudbees.com/), [container-solutions.com](http://container-solutions.com/).
 
 #### 5. I choose to be a web developer.
 
@@ -179,7 +177,7 @@ $ git push heroku master
 
 ## License
 
-* [MIT Licensed](http://choosealicense.com/licenses/mit/).
+* [MIT License](http://choosealicense.com/licenses/mit/).
 
 ## Author
 
