@@ -19,12 +19,12 @@ gulp.task('cleandist', () => {
 
 // Clean dist/jspm_packages folder
 gulp.task('cleanjspm', () => {
-  return gulp.src('dist/public/jspm_packages')
+  return gulp.src([paths.jspm])
     .pipe($.clean()); 
 });
 
 // Clean dist/node_modules folder
 gulp.task('cleannode', () => {
-  return gulp.src('dist/public/node_modules')
+  return gulp.src([paths.node])
     .pipe($.clean()); 
 });

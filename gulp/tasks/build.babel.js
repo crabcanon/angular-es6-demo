@@ -20,7 +20,7 @@ gulp.task('buildcss', () => {
 
 // Compile javascript to dist folder
 gulp.task('buildjs', () => {
-  return gulp.src('./app/js/app.js')
+  return gulp.src(paths.entry)
     .pipe($.jspm({
       selfExecutingBundle: true,
       minify: true,
@@ -43,13 +43,13 @@ gulp.task('buildhtml', () => {
 // Build server.js
 gulp.task('buildserver', () => {
   return gulp.src(paths.server)
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest(paths.root));
 });
 
 // Build package.json
 gulp.task('buildpackage', () => {
   return gulp.src(paths.package)
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest(paths.root));
 });
 
 // Clean dist folder and rebuild 
