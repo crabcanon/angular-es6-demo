@@ -1,6 +1,6 @@
 {
-  "name": "kiosked-assignment",
-  "version": "1.0.0",
+  "name": "angular-es6-demo",
+  "version": "0.0.1",
   "description": "An experimental project in using ES6, SystemJS, JSPM, Gulp, Babel, AngularJS, Sass, Travis CI and Heroku.",
   "main": "system.config.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/crabcanon/kiosked-assignment.git"
+    "url": "git+ssh://git@github.com/crabcanon/angular-es6-demo.git"
   },
   "keywords": [
     "es6",
@@ -30,9 +30,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/crabcanon/kiosked-assignment/issues"
+    "url": "https://github.com/crabcanon/angular-es6-demo/issues"
   },
-  "homepage": "https://github.com/crabcanon/kiosked-assignment#readme",
+  "homepage": "https://github.com/crabcanon/angular-es6-demo#readme",
   "jspm": {
     "configFile": "system.config.js",
     "dependencies": {
