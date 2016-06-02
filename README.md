@@ -20,10 +20,10 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
   * how to code with AngularJS 1.x in using ES6.
   * a good practice of Sass.
   * how to build a bundle via `jspm bundle`.
-  * how to use Travis CI for build test.
+  * how to use Travis CI.
   * how to automatically test and deploy a Node.js production to Heroku.
   
-## Features(V1.0.0)
+## Features(V0.0.1)
 
 * No more `bower`
 * No more `RequireJS`(replaced by `ES6 modules`)
