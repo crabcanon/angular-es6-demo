@@ -34,9 +34,8 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * Bootstrap the webpage via `systemjs`
 * CSS3 Flexbox layout
 * Build production via `jspm`
-* Automated build test via `Travis CI`
-* Automated status check via [shields.io](http://shields.io/)
-* **Each time when you push codes to github repo, it will trigger the automated build/test/deploy process of Travis CI and your final production(dist folder) will be automatically deployed to Heroku if build passed(Please follow 'Get started' to config your own setup).**
+* Continuous integration via `Travis CI`
+* Badges by [shields.io](http://shields.io/)
 
 ## Get started
 
