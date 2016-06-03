@@ -1,9 +1,9 @@
 # angular-es6-demo ([Live demo](https://angular-es6.herokuapp.com/))
 An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla), [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/), [AngularJS 1.x](https://angularjs.org/), [Sass](http://sass-lang.com/), [Travis CI](https://travis-ci.org/) and [Heroku](https://dashboard.heroku.com/).
 
-[![GitHub issues](https://img.shields.io/github/issues/crabcanon/angular-es6-demo.svg?maxAge=2592000)](https://github.com/crabcanon/angular-es6-demo/issues)
-[![David](https://img.shields.io/david/dev/crabcanon/angular-es6-demo.svg?maxAge=2592000)](https://david-dm.org/crabcanon/angular-es6-demo#info=devDependencies&view=table)
-[![Travis](https://img.shields.io/travis/crabcanon/angular-es6-demo.svg?maxAge=2592000)](https://travis-ci.org/crabcanon/angular-es6-demo/builds)
+[![GitHub issues](https://img.shields.io/github/issues/crabcanon/angular-es6-demo.svg)](https://github.com/crabcanon/angular-es6-demo/issues)
+[![David](https://img.shields.io/david/dev/crabcanon/angular-es6-demo.svg)](https://david-dm.org/crabcanon/angular-es6-demo#info=devDependencies&view=table)
+[![Travis](https://img.shields.io/travis/crabcanon/angular-es6-demo.svg)](https://travis-ci.org/crabcanon/angular-es6-demo/builds)
 [![Heroku](https://heroku-badge.herokuapp.com/?app=angular-es6&style=flat)](https://angular-es6.herokuapp.com/)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/crabcanon/angular-es6-demo/master/LICENSE)
  
