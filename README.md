@@ -1,12 +1,11 @@
-# kiosked-assignment ([Live demo](https://kiosked-assignment.herokuapp.com/))
+# angular-es6-demo ([Live demo](https://angular-es6.herokuapp.com/))
 An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla), [SystemJS](https://github.com/systemjs/systemjs), [JSPM](http://jspm.io/), [Gulp](http://gulpjs.com/), [Babel](https://babeljs.io/), [AngularJS 1.x](https://angularjs.org/), [Sass](http://sass-lang.com/), [Travis CI](https://travis-ci.org/) and [Heroku](https://dashboard.heroku.com/).
 
-[![GitHub issues](https://img.shields.io/github/issues/crabcanon/kiosked-assignment.svg)](https://github.com/crabcanon/kiosked-assignment/issues)
-[![Dependencies](https://david-dm.org/crabcanon/kiosked-assignment.svg)](https://david-dm.org/crabcanon/kiosked-assignment)
-[![devDependency Status](https://david-dm.org/crabcanon/kiosked-assignment/dev-status.svg)](https://david-dm.org/crabcanon/kiosked-assignment#info=devDependencies)
-[![Build Status](https://travis-ci.org/crabcanon/kiosked-assignment.svg?branch=master)](https://travis-ci.org/crabcanon/kiosked-assignment)
-[![Heroku](https://heroku-badge.herokuapp.com/?app=kiosked-assignment&style=flat)](https://kiosked-assignment.herokuapp.com/)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/crabcanon/kiosked-assignment/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/crabcanon/angular-es6-demo.svg?maxAge=2592000)](https://github.com/crabcanon/angular-es6-demo/issues)
+[![David](https://img.shields.io/david/dev/crabcanon/angular-es6-demo.svg?maxAge=2592000)](https://david-dm.org/crabcanon/angular-es6-demo#info=devDependencies&view=table)
+[![Travis](https://img.shields.io/travis/crabcanon/angular-es6-demo.svg?maxAge=2592000)](https://travis-ci.org/crabcanon/angular-es6-demo/builds)
+[![Heroku](https://heroku-badge.herokuapp.com/?app=angular-es6&style=flat)](https://angular-es6.herokuapp.com/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/crabcanon/angular-es6-demo/master/LICENSE)
  
 ![Screenshot Two](/screenshots/heroku.png)  
  
@@ -34,7 +33,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * Bootstrap the webpage via `systemjs`
 * CSS3 Flexbox layout
 * Build production via `jspm`
-* Continuous integration via `Travis CI`
+* Continuous integration via [`Travis CI`](https://travis-ci.org/)
 * Badges by [shields.io](http://shields.io/)
 
 ## Get started
@@ -73,9 +72,9 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: [encrypted version of your heroku api key]
-  app: kiosked-assignment
+  app: angular-es6
   on:
-    repo: crabcanon/kiosked-assignment
+    repo: crabcanon/angular-es6-demo
 ```
 * Login to your Heroku account: `heroku login`.
 * Create a new Heroku app: `heroku create`.
