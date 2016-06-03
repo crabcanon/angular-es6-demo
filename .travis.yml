@@ -11,8 +11,11 @@ before_install:
 - npm install jspm
 - jspm config registries.github.auth $GH_TOKEN
 install:
-- npm install
-- jspm install
+- npm start
+- npm uninstall systemjs
+- npm install systemjs
+- jspm cc
+- jspm install -y
 script:
 - gulp build
 cache:
