@@ -1,0 +1,9 @@
+<section id="popup-section" class="section-item">
+  <button id="popup-button" class="btn btn-yellow" ng-show="!vm.show" ng-click="vm.openModal()">Click me!</button>
+  <div id="popup-modal" ng-show="vm.show">
+    <button class="modal-header btn btn-yellow" ng-click="vm.hideModal()">Close modal</button>
+    <div class="modal-content">
+      <div id="timer" timer ng-if="vm.show"></div>
+    </div>
+  </div>
+</section>
