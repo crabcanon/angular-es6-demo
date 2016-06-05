@@ -15,6 +15,9 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 
+# Directory for production
+dist
+
 # Directory for npm
 node_modules
 
