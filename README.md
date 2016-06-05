@@ -34,7 +34,7 @@ An experimental project in using [ES6](https://developer.mozilla.org/en-US/docs/
 * CSS3 Flexbox layout
 * Build production via `jspm`
 * Continuous integration via [`Travis CI`](https://travis-ci.org/)
-* Badges by [shields.io](http://shields.io/)
+* Badges by [`shields.io`](http://shields.io/)
 
 ## Get started
 
