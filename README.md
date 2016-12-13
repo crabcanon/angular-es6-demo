@@ -115,7 +115,7 @@ $ git push heroku master
 ```
 * Visit 'https://your-heroku-app-name.herokuapp.com'.
 
-## Motivation
+## Motivations
 
 #### 1. Why to use ES6?
 
@@ -177,8 +177,10 @@ $ git push heroku master
 
 * [MIT License](http://choosealicense.com/licenses/mit/).
 
-## Author
 
-* Email: sysuhuangye@gmail.com
-* Personal website: https://yehuang.me
+---
+
+> [yehuang.me](https://yehuang.me) &nbsp;&middot;&nbsp;
+> GitHub [@crabcanon](https://github.com/crabcanon) &nbsp;&middot;&nbsp;
+> Gmail [@sysuhuangye](<mailto:sysuhuangye@gmail.com>)
    
