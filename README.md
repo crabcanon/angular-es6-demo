@@ -175,8 +175,7 @@ $ git push heroku master
 
 ## License
 
-* [MIT License](http://choosealicense.com/licenses/mit/).
-
+[MIT License](http://choosealicense.com/licenses/mit/)
 
 ---
 
